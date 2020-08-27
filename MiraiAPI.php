@@ -11,7 +11,7 @@ error_reporting(E_ALL);
     }
     // Check if all parameters are passed
     if (!isset($_GET["key"]) || !isset($_GET["host"]) || !isset($_GET["port"]) || !isset($_GET["time"]) || !isset($_GET["method"]))
-        die("You are missing a parameter")
+        die("You are missing a parameter");
     // Variables for attack
     $key = htmlsc($_GET["key"]);
     $host = htmlsc($_GET["host"]);
